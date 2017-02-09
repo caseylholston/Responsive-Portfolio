@@ -320,105 +320,98 @@ a:active {
 
 
 
+/*Media Screen for breakpoint at 980px*/
+
+@media only screen and (max-width: 980px){
 	
-
-
-
-
-
-
-@media screen and (max-width: 980px) and (min-width: 769px){
-	
-	header {
-		width: 100%;
-		margin: 0 auto;
+	.container {
+		max-width: 768;
+		padding: 0 20px;
 	}
 
-	nav {
-	float: left;
-	position: absolute;
-	right:0px;
-	display: inline;
-	margin: 10px 150px 10px 10px;	
+	.main-container {
+		padding-top: 130px;
 	}
 
-	.wrapper {
+	.main-section {
+		max-width: 420px;
+	}
+
+	.work {
 		width: 100%;
 	}
 
-	#bio-image {
-		width:100%;
-		height: 66%;
-		margin: 0px 10px 20px 0px;
+	.auth-image {
+		width: 100%;
+		margin-bottom: 20px;
 	}
-	
-	.main-content {
-		width:45%;
-		max-width: 50%;
-	}
-
-	aside {
-		width:25%;
-		max-width: 25%;
-		margin-left: 20px;
-
-	}
-
-	.social-icons {
-	width: 40px;
-	height: 40px;
-	margin: 10px 0px 10px 0px;
-	}
-
-	#connect {
-	width: 75%;
-	margin: 0 auto;
-	padding: 0px auto;
-	border-top: solid;
-	border-width: thin;
-	border-top-color: #cccccc;
-	}
-
-	span{
-		margin: 0 10px;
-		width: 100%
-	}
-
 }
 
-@media screen and (max-width: 768px) and (min-width: 640px) {
+/*Media Screen for breakpoint at 768px*/
+
+@media only screen and (max-width: 768px) {
 	
-	.wrapper {
-		width: 100%;
-		max-width: 768px;
+	.main-section,
+	.sidebar {
+		max-width: 100%;
 	}
 
-	.main-content {
-		width: 100%;
-		margin: 10px 20px;
-	}
+	.work {
+    	margin-bottom: 10px;
+   		width: 47%;
+    
+  	}
 
-	#name {
-		margin-left: 20px;
-	}
+  	.work:nth-child(even){  
+  		margin-right: 0; 
+  	}
 
-	aside {
-		width:100%;
-		margin-left: 20px;
-	}
+  	.work:nth-child(odd) { 
+  		float: right; 
+  	}
 
-	#connect {
-	width: 100%;
-	margin: 0 auto;
-	padding: 0px auto;
-	border-top: solid;
-	border-width: thin;
-	border-top-color: #cccccc;
-	}
+  	.auth-image { 
+  		width: 50%; 
+  	}
 
+  	.sidebar { 
+  		margin-bottom: 40px; 
+  	}
 }
 
-@media screen and (max-width: 640px)
-	
+/*Media Screen for breakpoint at 640px*/
 
+@media only screen and (max-width: 640px) {
+
+  #masthead {
+    position: static;
+    margin-bottom: 20px;
+  }
+
+  header,
+  .container { 
+  	padding: 0; 
+  }
+
+  #main-container { 
+  	padding-top: 0; 
+  }
+
+  #logo,
+  .work,
+  .auth-image { 
+  	width: 100%; 
+  }
+
+  nav {
+    margin: 15px 0;
+    width: 100%;
+    text-align: center;  
+  }
+
+  nav a {
+    margin-left: 0;
+    width: 30%;
+    padding-left: 0; 
+  }
 }
